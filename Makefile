@@ -5,6 +5,8 @@ brain-games: #run brain-games.js
 	node bin/brain-games.js
 brain-even: #run brain-even.js
 	node bin/brain-even.js
+brain-calc: #run brain-calc.js
+	node bin/brain-calc.js
 publish:
 	npm publish --dry-run
 lint: #run eslint
