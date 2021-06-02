@@ -1,9 +1,7 @@
 import readlineSync from 'readline-sync';
-import { helloGetName } from './cli.js';
+import { helloGetName, gcd, getRandom } from './cli.js';
 
-const getRandom = () => Math.floor(Math.random() * (30 - 1 + 1)) + 1; // random int from 1 to 30
-
-const evenGame = () => {
+export const evenGame = () => {
   const userName = helloGetName();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
@@ -29,7 +27,7 @@ const evenGame = () => {
 
 const ops = ['+', '-', '*'];
 
-const calcGame = () => {
+export const calcGame = () => {
   const userName = helloGetName();
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
@@ -55,5 +53,27 @@ const calcGame = () => {
   }
 };
 
-export { evenGame };
-export { calcGame };
+export const gcdGame = () => {
+  const userName = helloGetName();
+  console.log('Find the greatest common divisor of given numbers.');
+  for (let i = 0; i < 3; i += 1) {
+    const a = getRandom();
+    const b = getRandom();
+    const RightAnswer = gcd(a, b).toString();
+    console.log(`Question: ${a} ${b}`);
+    const answer = readlineSync.question('Your answer: ');
+    if (answer !== RightAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${RightAnswer}'`);
+      console.log(`Let's try again, ${userName}!`);
+      break;
+    }
+    if (answer === RightAnswer && i === 2) {
+      console.log('Correct!');
+      console.log(`Congratulations, ${userName}!`);
+      break;
+    }
+    if (answer === RightAnswer) {
+      console.log('Correct!');
+    }
+  }
+};
