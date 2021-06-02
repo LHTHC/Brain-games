@@ -13,6 +13,7 @@ const evenGame = () => {
     console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== RightAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${RightAnswer}'`)
       console.log(`Let's try again, ${userName}!`);
       break;
     }
