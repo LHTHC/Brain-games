@@ -15,9 +15,9 @@ export const gcd = (a, b) => {
 };
 
 export const getRandom = (min, max) => {
-  let randomNum = min + Math.random() * (max + 1 - min);
+  const randomNum = min + Math.random() * (max + 1 - min);
   return Math.floor(randomNum);
-} 
+};
 
 export const getArray = () => {
   const step = getRandom(1, 6);
