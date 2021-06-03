@@ -7,7 +7,7 @@ export const evenGame = () => {
   const userName = helloGetName();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
-    const num = getRandom();
+    const num = getRandom(1, 100);
     const RightAnswer = (num % 2 === 0) ? 'yes' : 'no';
     console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
@@ -33,9 +33,9 @@ export const calcGame = () => {
   const userName = helloGetName();
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
-    const a = getRandom();
-    const b = getRandom();
-    const randOp = ops[Math.floor(Math.random() * 3)];
+    const a = getRandom(1, 30);
+    const b = getRandom(1, 30);
+    const randOp = ops[getRandom(0, 2)];
     const RightAnswer = (eval(`${a} ${randOp} ${b}`).toString());
     console.log(`Question: ${a} ${randOp} ${b}`);
     const answer = readlineSync.question('Your answer: ');
@@ -59,8 +59,8 @@ export const gcdGame = () => {
   const userName = helloGetName();
   console.log('Find the greatest common divisor of given numbers.');
   for (let i = 0; i < 3; i += 1) {
-    const a = getRandom();
-    const b = getRandom();
+    const a = getRandom(1, 100);
+    const b = getRandom(1, 100);
     const RightAnswer = gcd(a, b).toString();
     console.log(`Question: ${a} ${b}`);
     const answer = readlineSync.question('Your answer: ');
@@ -85,7 +85,7 @@ export const progGame = () => {
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
     const arr = getArray();
-    const hiddenI = Math.round(1 + Math.random() * (arr.length - 2));
+    const hiddenI = getRandom(1, arr.length - 2);
     const RightAnswer = arr[hiddenI].toString();
     arr[hiddenI] = '..';
     console.log(`Question: ${arr.join(' ')}`);
@@ -110,7 +110,7 @@ export const primeGame = () => {
   const userName = helloGetName();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
-    const num = getRandom();
+    const num = getRandom(1, 100);
     const RightAnswer = isPrime(num).toString();
     console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
