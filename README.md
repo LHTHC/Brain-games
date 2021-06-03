@@ -11,3 +11,6 @@ Example of brain-calc game run win and fail, again
 
 Example of brain-gcd game..
 [![asciicast](https://asciinema.org/a/B6O4OLQRDiDQpbtqtDF3ZLnOy.svg)](https://asciinema.org/a/B6O4OLQRDiDQpbtqtDF3ZLnOy)
+
+Example of brain-progression game run
+[![asciicast](https://asciinema.org/a/geXdR2tiqSJCMLvtWOkLU31qV.svg)](https://asciinema.org/a/geXdR2tiqSJCMLvtWOkLU31qV)
