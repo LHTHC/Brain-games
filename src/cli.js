@@ -37,3 +37,23 @@ export const isPrime = (num) => {
   }
   return 'yes';
 };
+
+export const calcWithRandOp = (a, b, randOp) => {
+  var rightAnswer = 0;
+
+  switch (randOp) {
+    case '-':
+    rightAnswer = a - b;
+    return rightAnswer;
+    case '+':
+    rightAnswer = a + b;
+    return rightAnswer;
+    case '*':
+    rightAnswer = a * b;
+    return rightAnswer;
+
+    default:
+    return false;
+  }
+
+}

@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import {
-  helloGetName, gcd, getRandom, getArray, isPrime,
+  helloGetName, gcd, getRandom, getArray, isPrime, calcWithRandOp
 } from './cli.js';
 
 export const evenGame = () => {
@@ -27,16 +27,15 @@ export const evenGame = () => {
   }
 };
 
-const ops = ['+', '-', '*'];
-
 export const calcGame = () => {
   const userName = helloGetName();
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
     const a = getRandom(1, 30);
     const b = getRandom(1, 30);
+    const ops = '-*+';
     const randOp = ops[getRandom(0, 2)];
-    const RightAnswer = (eval(`${a} ${randOp} ${b}`).toString());
+    const RightAnswer = calcWithRandOp(a, b, randOp).toString();
     console.log(`Question: ${a} ${randOp} ${b}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== RightAnswer) {
