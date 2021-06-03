@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import {
-  helloGetName, gcd, getRandom, getArray, isPrime, calcWithRandOp
+  helloGetName, gcd, getRandom, getArray, isPrime, calcWithRandOp,
 } from './cli.js';
 
 export const evenGame = () => {
