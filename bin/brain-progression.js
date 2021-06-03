@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { progGame } from '../src/index.js';
+import { progGame } from '../src/games.js';
 
 console.log('Welcome to the Brain Games!');
 progGame();
