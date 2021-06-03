@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import {
-  helloGetName, gcd, getRandom, getArray,
+  helloGetName, gcd, getRandom, getArray, isPrime,
 } from './cli.js';
 
 export const evenGame = () => {
@@ -89,6 +89,30 @@ export const progGame = () => {
     const RightAnswer = arr[hiddenI].toString();
     arr[hiddenI] = '..';
     console.log(`Question: ${arr.join(' ')}`);
+    const answer = readlineSync.question('Your answer: ');
+    if (answer !== RightAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${RightAnswer}'`);
+      console.log(`Let's try again, ${userName}!`);
+      break;
+    }
+    if (answer === RightAnswer && i === 2) {
+      console.log('Correct!');
+      console.log(`Congratulations, ${userName}!`);
+      break;
+    }
+    if (answer === RightAnswer) {
+      console.log('Correct!');
+    }
+  }
+};
+
+export const primeGame = () => {
+  const userName = helloGetName();
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  for (let i = 0; i < 3; i += 1) {
+    const num = getRandom();
+    const RightAnswer = isPrime(num).toString();
+    console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== RightAnswer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${RightAnswer}'`);

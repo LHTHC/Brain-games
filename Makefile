@@ -11,6 +11,8 @@ brain-gcd: #run brain-gcd.js
 	node bin/brain-gcd.js
 brain-progression: #run brain-progression.js
 	node bin/brain-progression.js
+brain-prime: #run brain-prime.js
+	node bin/brain-prime.js
 publish:
 	npm publish --dry-run
 lint: #run eslint
