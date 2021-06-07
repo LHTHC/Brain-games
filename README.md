@@ -1,19 +1,47 @@
-### Hexlet tests and linter status:
+### tests and linter status:
 [![Actions Status](https://github.com/LHTHC/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/LHTHC/frontend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Linter](https://github.com/LHTHC/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/LHTHC/frontend-project-lvl1/actions/workflows/linter.yml)
 
-Example of brain-even game run with win and fail
-[![asciicast](https://asciinema.org/a/AWb3xYxk2wFbfVXezY1fkR5CV.svg)](https://asciinema.org/a/AWb3xYxk2wFbfVXezY1fkR5CV)
+The package provides a small set of mathematical **mini-games** that run in the console.
 
-Example of brain-calc game run win and fail, again
-[![asciicast](https://asciinema.org/a/Jifubs8gcoEVsNqv1H3WidhGg.svg)](https://asciinema.org/a/Jifubs8gcoEVsNqv1H3WidhGg)
+## Includes
+- **Brain-calc:** Calculate the mathematical expression.
+- **Brain-even:** Say "yes" if the number is even, otherwise "no".
+- **Brain-gcd:** Find the greatest common divisor of given numbers.
+- **Brain-prime:** Say "yes" if the number is prime, otherwise "no".
+- **Brain-progression:** Find the missing number in the number row.
 
-Example of brain-gcd game..
-[![asciicast](https://asciinema.org/a/B6O4OLQRDiDQpbtqtDF3ZLnOy.svg)](https://asciinema.org/a/B6O4OLQRDiDQpbtqtDF3ZLnOy)
+## Getting started
 
-Example of brain-progression game run
-[![asciicast](https://asciinema.org/a/geXdR2tiqSJCMLvtWOkLU31qV.svg)](https://asciinema.org/a/geXdR2tiqSJCMLvtWOkLU31qV)
+### Requirements
 
-Brain-prime game showcase
-[![asciicast](https://asciinema.org/a/Ku3l2Jx646Pm3qJC3mnCWB8xf.svg)](https://asciinema.org/a/Ku3l2Jx646Pm3qJC3mnCWB8xf)
+Node.js 13+
+
+### Installing
+
+```
+npm link
+```
+
+## Examples
+
+### brain-even game:
+
+[![asciicast](https://asciinema.org/a/ZY1PyGtXqIALRkXL76WGqvRt7.svg)](https://asciinema.org/a/ZY1PyGtXqIALRkXL76WGqvRt7)
+
+### brain-calc game:
+
+[![asciicast](https://asciinema.org/a/T2sLQ6RuOjwUqTFMowQuZR8TI.svg)](https://asciinema.org/a/T2sLQ6RuOjwUqTFMowQuZR8TI)
+
+### brain-gcd game:
+
+[![asciicast](https://asciinema.org/a/XZ7Q9Hsg6GU9CpzccjBErizAM.svg)](https://asciinema.org/a/XZ7Q9Hsg6GU9CpzccjBErizAM)
+
+### brain-progression game:
+
+[![asciicast](https://asciinema.org/a/AsNhxFf3nF201TOSFmqmM6r8l.svg)](https://asciinema.org/a/AsNhxFf3nF201TOSFmqmM6r8l)
+
+### Brain-prime game:
+
+[![asciicast](https://asciinema.org/a/kp8rhkADgYsqOPRBvfn8vHqsW.svg)](https://asciinema.org/a/kp8rhkADgYsqOPRBvfn8vHqsW)
