@@ -22,7 +22,7 @@ Node.js 13+
 
 
 ***
-1. Clone this repository.**    
+1. Clone this repository.
 2. Go to directory frontend-project-lvl1.  
 3. Enter the command: make install.
 4. Enter the command: npm link.
