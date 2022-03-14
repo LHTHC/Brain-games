@@ -23,10 +23,10 @@ Node.js 13+
 
 ***
 1. Clone this repository.**    
-2. Go to directory frontend-project-lvl1.**     
-3. Enter the command: make install.**     
-4. Enter the command: npm link.**    
-5. To start the game, enter the command:**  
+2. Go to directory frontend-project-lvl1.  
+3. Enter the command: make install.
+4. Enter the command: npm link.
+5. To start the game, enter the command:
 - Brain-even game - *make brain-even*
 - Brain-calc game - *make brain-calc*
 - Вrain-gcd game - *make brain-gcd*
